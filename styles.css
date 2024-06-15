@@ -1,0 +1,171 @@
+/* basic */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    margin-bottom: 60px; /* 留出足夠的空間來避開 footer */
+}
+
+aside {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+/* 首頁圖 */
+
+/* 輪播容器 */
+.slideshow-container {
+    position: relative;
+    max-width: 100%; /* 調整為適合的寬度 */
+    margin: auto;
+    overflow: hidden; /* 隱藏超出部分 */
+}
+.slide {
+    display: none;
+}
+.slide img {
+    width: 100%; /* 圖片寬度設置為100%，讓其充滿整個容器 */
+    height: 100%; /* 圖片高度設置為100%，讓其充滿整個容器 */
+    object-fit: cover; /* 讓圖片按比例填充整個容器，可能會裁切部分圖片 */
+}
+
+/* 上一張和下一張按鈕樣式 */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 最新消息 */
+
+table, th, td {
+    border: 1px solid #ddd;
+    margin-left:auto; 
+    margin-right:auto;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.center {
+    text-align: center;
+}
+
+/* 基本樣式 */
+section {
+    max-width: 1000px; /* 最大寬度 */
+    margin: 20px auto; /* 上下20px間距，左右自動居中 */
+    padding: 20px;
+    background-color: #fff; /* 背景色白色 */
+    border: 1px solid #ddd; /* 邊框 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 邊框陰影 */
+}
+
+/* 標題樣式 */
+section h2 {
+    font-size: 24px; /* 標題字體大小 */
+    color: #333; /* 標題文字顏色 */
+    margin-bottom: 10px; /* 底部間距 */
+    text-align: center; /* 文字居中對齊 */
+}
+
+/* 段落樣式 */
+section p {
+    font-size: 16px; /* 段落字體大小 */
+    color: #666; /* 段落文字顏色 */
+    margin-bottom: 10px; /* 底部間距 */
+}
+
+/* 圖片樣式 */
+section img {
+    display: block; /* 讓圖片單獨占一行 */
+    max-width: 100%; /* 最大寬度100%，避免圖片超出容器 */
+    height: auto; /* 根據寬度自動調整高度 */
+    margin: 0 auto; /* 居中顯示 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* 圖片陰影 */
+}
+
+/* form */
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px; /* 設置表單寬度 */
+    margin: 0 auto; /* 將表單置中 */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
